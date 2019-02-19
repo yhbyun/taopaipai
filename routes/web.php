@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/annotate', 'AnnotationController@displayForm');
+Route::post('/annotate', 'AnnotationController@annotateImage');
